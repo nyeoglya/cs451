@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="assn1" />
+		<Option pch_mode="2" />
+		<Option compiler="msvc17" />
+		<Build>
+			<Target title="Release">
+				<Option output="bin/Release/assn1" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="msvc17" />
+				<Compiler>
+					<Add option="/Ox" />
+					<Add option="/Og" />
+					<Add option="/DNDEBUG" />
+					<Add directory="opengl/include" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="opengl/include" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="freeglut.lib" />
+					<Add library="glew32.lib" />
+					<Add directory="opengl/lib" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="/W3" />
+			<Add option="/EHsc" />
+		</Compiler>
+		<Unit filename="main.cpp" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
